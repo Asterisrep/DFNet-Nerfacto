@@ -1,0 +1,22 @@
+############################################### NeRF-Hist training example Cambridge ###############################################
+model_name=''
+basedir='/root/dfnet_nerfacto/logs'
+expname=exp
+datadir='/root/dfnet_nerfacto/workspace/iw_old'
+df=1
+learning_rate=0.0001
+combine_loss_w=[0,1,0]
+load_pose_avg_stats=True
+epochs=300
+DFNet=True
+tripletloss=True
+featurenet_batch_size=4 # batch size, 4 or 8
+random_view_synthesis=True
+rvs_refresh_rate=10
+rvs_trans=0.30
+rvs_rotation=30
+d_max=1
+save_all_ckpt=False
+#pretrain_model_path = '/home/asterisreppas/pose_regressor_locnerf/logs/final_weight_old_10_0.3_30.pt' # add your trained model for eval
+eval=False # add this for eval
+

@@ -1,0 +1,22 @@
+############################################### NeRF-Hist training example Cambridge ###############################################
+model_name=''
+basedir='/home/asterisreppas/pose_regressor_locnerf/logs'
+expname=iw_old_1
+datadir='/home/asterisreppas/iw_old'
+df=1
+learning_rate=0.0001
+combine_loss_w=[1,1,1]
+load_pose_avg_stats=True
+epochs=300
+DFNet=True
+tripletloss=True
+featurenet_batch_size=4 # batch size, 4 or 8
+random_view_synthesis=True
+rvs_refresh_rate=20
+rvs_trans=0.15
+rvs_rotation=10
+d_max=1
+save_all_ckpt=False
+pretrain_model_path = '/home/asterisreppas/pose_regressor_locnerf/logs/final_weight_old_0.15_20.pt' # add your trained model for eval
+eval=True # add this for eval
+

@@ -1,0 +1,20 @@
+############################################### NeRF-Hist training example Cambridge ###############################################
+model_name=''
+basedir='/root/'
+expname=iw_old_10_0.3_30_DF
+datadir='/root/dfnet_nerfacto/workspace/iw_old'
+df=1
+learning_rate=0.00001
+combine_loss = True
+combine_loss_w=[0,0,1]
+feature_matching_lvl=[0,1,2]
+per_channel=True
+load_pose_avg_stats=True
+epochs=300
+DFNet=True
+tripletloss=True
+featurenet_batch_size=4 # batch size, 4 or 8
+save_all_ckpt=False
+pretrain_model_path = '/root/dfnet_nerfacto/workspace/final_weight_old_20_0.15_10.pt' # add your trained model for eval
+pretrain_featurenet_path = '/root/dfnet_nerfacto/workspace/final_weight_old_20_0.15_10.pt'
+eval=False # add this for eval
